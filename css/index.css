@@ -136,11 +136,29 @@ html {
     color: gray;
     margin-left: 1rem;
     margin-right: 1rem;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .skills-icon:hover {
-    transform: scale(1.5);
+    transform: scale(-1.5,1.5);
+    color: #02aab0;
+    background-image: -webkit-linear-gradient(92deg, #02aab0, #00cdac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+.contacts-icon {
+    font-size: 2rem;
+    color: gray;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+}
+
+.contacts-icon:hover {
+    transform: scale(1.2);
     color: #02aab0;
     background-image: -webkit-linear-gradient(92deg, #02aab0, #00cdac);
     -webkit-background-clip: text;
