@@ -19,12 +19,12 @@
     <div id="main-box">
         <div class="d-flex justify-content-center" id="about-me">
             <div class="d-flex">
-                <div class="flex-shrink-0" id="image">
+                <div class="flex-shrink-0" id="image" style="isolation:isolate">
                     <img
                         src="./images/siddharth.png"
                         alt="image">
                 </div>
-                <div class="flex-grow-1 ms-5 name-heading">
+                <div class="flex-grow-1 ms-5 name-heading" style="isolation:isolate">
                     <h1 id="name" class="gradiant-effect">SIDDHARTH KS.</h1>
                     <p class="gray-text" style="text-align:center; font-size:1.25rem;">Hi&#128075;this is Siddharth. I'm a Java developer and an Anroid&#128241;enthusiast.
                         Currently I'm a full time student&#x1f393;based in Ghaziabad, UP.
@@ -91,6 +91,7 @@
     <h1 id="main-heading" class="gradiant-effect" style="margin-top: 0px;"></h1>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <script>
         tippy('[data-tippy-content]', {
             arrow: false,
@@ -108,6 +109,21 @@
             loader.style.borderRadius="50%";
             loader.style.visibility="hidden";
         });
+
+        const options = {
+            bottom: '32px', 
+            right: '32px', 
+            left: 'unset', 
+            time: '0.5s', 
+            mixColor: '#fff', 
+            buttonColorDark: '#fff',
+            buttonColorLight: '#111',
+            saveInCookies: true,
+            label: '🌙',
+            autoMatchOsTheme: true
+        }
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
     </script>
 </body>
 </html>
