@@ -1,32 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
-
 body,
 html {
+    margin: 0px;
+    padding: 0px;
     background-color: #111111;
     color: white;
     height: 100%; 
 }
-
-
-
+#loader{
+    height: 1500px;
+    width: 1500px;
+    background-color: #565454;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    transition: all 0.5s;
+}
+#loader img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 #name{
     text-align: center;
     font-size: 30px;
     font-family: monospace;
 }
-
 #image{
     margin-top: 40px;
 }
-
 #main-heading {
     border-top: solid;
 }
-
 #about-me h1 {
     font-family: 'Hammersmith One', sans-serif;
 }
-
 #second-heading {
     font-family: monospace;
     font-size: 25px;
@@ -37,7 +48,6 @@ html {
     text-align: center;
     margin: 0 auto;
 }
-
 #second-heading:before,
 #second-heading:after {
     content: '';
@@ -45,11 +55,9 @@ html {
     margin: 0 20px 0 0;
     flex: 1 0 20px;
 }
-
 #second-heading:after {
     margin: 0 0 0 20px;
 }
-
 #third-heading h1 {
     max-width: 1034px;
     display: flex;
@@ -59,18 +67,15 @@ html {
     margin-top: 30px;
     margin-bottom: 30px
 }
-
 #third-heading h1:after {
     content: '';
     border-top: 2px solid;
     margin: 0 20px 0 0;
     flex: 1 0 20px;
 }
-
 #third-heading h1:after {
     margin: 15px 0 0 10px;
 }
-
 #fourth-heading h1 {
     max-width: 1034px;
     display: flex;
@@ -79,22 +84,18 @@ html {
     width: 100%;
     margin-top: 30px
 }
-
 #fourth-heading h1:before {
     content: '';
     border-top: 2px solid;
     margin: 0 20px 0 0;
     flex: 1 0 20px;
 }
-
 #fourth-heading h1:before {
     margin: 15px 10px 0 0;
 }
-
 .gray-text {
     color: gray;
 }
-
 .gradiant-effect {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 6rem;
@@ -107,7 +108,6 @@ html {
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 10s infinite linear;
 }
-
 .hue-bold {
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
@@ -115,24 +115,20 @@ html {
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 10s infinite linear;
 }
-
 #main-box {
     margin: 0 auto;
     width: 90%;
     padding-top: 20px;
 }
-
 #about-me .name-heading {
     max-width: 50rem;
 }
-
 #about-me div div img {
     width: 10rem;
     height: 10rem;
     border-radius: 5rem;
     border: 3px solid;
 }
-
 .skills-icon {
     font-size: 3rem;
     color: gray;
@@ -140,7 +136,6 @@ html {
     margin-right: 1rem;
     transition: all 0.5s;
 }
-
 .skills-icon:hover {
     transform: scale(-1.5,1.5);
     color: #02aab0;
@@ -149,7 +144,6 @@ html {
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 10s infinite linear;
 }
-
 .contacts-icon {
     font-size: 2rem;
     color: gray;
@@ -158,7 +152,6 @@ html {
     margin-bottom: 1rem;
     transition: all 0.5s;
 }
-
 .contacts-icon:hover {
     transform: scale(1.2);
     color: #02aab0;
@@ -166,26 +159,19 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 10s infinite linear;
-}
-
-  
+} 
 .tippy-box[data-theme~='gradiant'] {
     color: white;
     background-color: transparent;
     opacity: 0.7;
 }
-
 .card {
     border-radius: 5px;
     background-color: #181818;
 }
-
 .card-text {
     color: gray;
 }
-
-
-
 #contact-me textarea,
 #contact-me input {
     background-color: #181818;
@@ -193,12 +179,9 @@ html {
     border: none;
     color: gray;
 }
-
 #contact-me textarea {
     background: #181818;
 }
-
-
 #contact-me button {
     font-family: 'Hammersmith One', sans-serif;
     color: #f35626;
@@ -207,7 +190,6 @@ html {
     outline: none;
     border: none;
 }
-
 @-webkit-keyframes hue {
     from {
         -webkit-filter: hue-rotate(0deg);

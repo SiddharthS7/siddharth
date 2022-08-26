@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
     <title>SID_S7</title>
     <meta charset="utf-8">
@@ -12,8 +11,10 @@
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
 </head>
-
 <body>
+    <div id="loader">
+        <img src="./images/loading_blue.gif" height="10%">
+    </div>
     <h1 id="main-heading" class="gradiant-effect"></h1>
     <div id="main-box">
         <div class="d-flex justify-content-center" id="about-me">
@@ -32,7 +33,6 @@
                 </div>
             </div>
         </div>
-
         <h1 class="gradiant-effect" id="second-heading">SKILLS</h1>
         <br>
         <div class="d-flex justify-content-center align-content-between flex-wrap" id="skills">
@@ -46,11 +46,9 @@
             <i class="skills-icon" data-tippy-content="MySql"><img src="./images/mysql.png" width="50rem"></i>
             <i class="skills-icon" data-tippy-content="GitHub"><img src="./images/github.png" width="50rem"></i>
         </div>
-
         <div class="container-xxl gradiant-effect " style=" max-width: 1034px;" id="third-heading">
             <h1>PROJECTS</h1>
         </div>
-
         <div class="container-xxl " style="max-width: 1034px;" id="projects">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -59,14 +57,12 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col">
                     <div class="card mb-3 h-100" style="max-width: 18rem;">
                         <div class="card-body" style="background-image: url(./images/stack.jpg); background-position:center; background-size: cover; position: relative;"><a href="https://github.com/SiddharthS7/stackoverflow-questions-tag-analysis" target="_blank" style="text-decoration: none;"><p class="gradiant-effect" style="font-size: large; font-weight: bolder;">Questions Tag analysis</p></a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col">
                     <div class="card mb-3 h-100" style="max-width: 18rem;">
                         <div class="card-body" style="background-image: url(./images/blurme.png); background-position:center; background-size: cover; position: relative;"><a href="https://siddharths7.netlify.app/" target="_blank" style="text-decoration: none;"><p class="gradiant-effect" style="font-size: large; font-weight:bolder">Portfolio Website</p></a>
@@ -75,11 +71,9 @@
                 </div>
             </div>
         </div>
-
         <div class="container-xxl gradiant-effect" style=" max-width: 1034px;" id="fourth-heading">
             <h1>CONTACT ME</h1>
         </div>
-
         <div class="container-xxl" style="max-width: 1034px;" id="contact-me">
             <div class="d-flex justify-content-center align-content-between flex-wrap" id="contacts">
                 <i class="contacts-icon"><a href="mailto:siddharthedu2@gmail.com" target="_blank"><img src="./images/gmail.png" width="30rem"></a></i>
@@ -92,14 +86,11 @@
                 <i class="contacts-icon"><a href="https://www.instagram.com/siddharth_s7/" target="_blank"><img src="./images/instagram.png" width="30rem"></a></i>
             </div>
         </div>
-
     </div>
-    
     <footer style="text-align: center; font-size: smaller;">&copy;Siddharth</footer>
     <h1 id="main-heading" class="gradiant-effect" style="margin-top: 0px;"></h1>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-
     <script>
         tippy('[data-tippy-content]', {
             arrow: false,
@@ -109,6 +100,14 @@
             placement: 'top',
         });
     </script>
-
+    <script>
+        var loader=document.getElementById("loader");
+        window.addEventListener("load",function(){
+            loader.style.height="100px";
+            loader.style.width="100px";
+            loader.style.borderRadius="50%";
+            loader.style.visibility="hidden";
+        });
+    </script>
 </body>
 </html>
