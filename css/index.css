@@ -172,6 +172,13 @@ html {
 .card-text {
     color: gray;
 }
+.proj-text {
+    position: absolute; 
+    top:50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+}
+
 #contact-me textarea,
 #contact-me input {
     background-color: #181818;
@@ -190,6 +197,13 @@ html {
     outline: none;
     border: none;
 }
+@media (max-width:400px) {
+    #image{
+        float: top;
+        visibility: hidden;
+    }
+}
+
 @-webkit-keyframes hue {
     from {
         -webkit-filter: hue-rotate(0deg);

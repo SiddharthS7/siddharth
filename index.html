@@ -19,12 +19,12 @@
     <div id="main-box">
         <div class="d-flex justify-content-center" id="about-me">
             <div class="d-flex">
-                <div class="flex-shrink-0" id="image" style="isolation:isolate">
+                <div class="flex-shrink-0" id="image">
                     <img
                         src="./images/siddharth.png"
                         alt="image">
                 </div>
-                <div class="flex-grow-1 ms-5 name-heading" style="isolation:isolate">
+                <div class="flex-grow-1 ms-5 name-heading">
                     <h1 id="name" class="gradiant-effect">SIDDHARTH KS.</h1>
                     <p class="gray-text" style="text-align:center; font-size:1.25rem;">Hi&#128075;this is Siddharth. I'm a Java developer and an Anroid&#128241;enthusiast.
                         Currently I'm a full time student&#x1f393;based in Ghaziabad, UP.
@@ -51,22 +51,40 @@
         </div>
         <div class="container-xxl " style="max-width: 1034px;" id="projects">
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card mb-3 h-100" style="max-width: 18rem;">
+                <div class="col" style="position: relative;">
+                    <!-- <div class="card mb-3 h-100" style="max-width: 18rem; border-radius: 10x;">
                         <div class="card-body" style="background-image: url(./images/quicktech.jpg); background-position:center; background-size: cover; position: relative;"><a href="https://github.com/SiddharthS7/quick-tech-news" target="_blank" style="text-decoration: none;"><p class="gradiant-effect" style="font-size: large; font-weight: bolder;">QuickTech News</p></a>
                         </div>
+                    </div> -->
+                    <img src="./images/quicktech.jpg" style="float: center; height: 150px; width: 100%; object-fit: cover;border-radius: 5px;">
+                    <div class="proj-text">
+                        <a href="https://github.com/SiddharthS7/quick-tech-news" target="_blank" style="text-decoration: none;">    
+                            <p class="gradiant-effect" style="font-size: 20px; font-weight:bold">QuickTech News</p>
+                        </a>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mb-3 h-100" style="max-width: 18rem;">
+                <div class="col" style="position: relative;">
+                    <!-- <div class="card mb-3 h-100" style="max-width: 18rem;">
                         <div class="card-body" style="background-image: url(./images/stack.jpg); background-position:center; background-size: cover; position: relative;"><a href="https://github.com/SiddharthS7/stackoverflow-questions-tag-analysis" target="_blank" style="text-decoration: none;"><p class="gradiant-effect" style="font-size: large; font-weight: bolder;">Questions Tag analysis</p></a>
                         </div>
+                    </div> -->
+                    <img src="./images/stack.jpg" style="float: center; height: 150px; width: 100%; object-fit: cover;border-radius: 5px;">
+                    <div class="proj-text">
+                        <a href="https://github.com/SiddharthS7/stackoverflow-questions-tag-analysis" target="_blank" style="text-decoration: none;">
+                            <p class="gradiant-effect" style="font-size: 20px; font-weight:bold">Questions Tag analysis</p>
+                        </a>    
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mb-3 h-100" style="max-width: 18rem;">
-                        <div class="card-body" style="background-image: url(./images/blurme.png); background-position:center; background-size: cover; position: relative;"><a href="https://siddharths7.netlify.app/" target="_blank" style="text-decoration: none;"><p class="gradiant-effect" style="font-size: large; font-weight:bolder">Portfolio Website</p></a>
+                <div class="col" style="position: relative;">
+                    <!-- <div class="card mb-3 h-100" style="max-width: 18rem;">
+                        <div class="card-body" style="background-image: url(./images/back.gif); background-position:center; background-size: cover; position: relative;"><a href="https://siddharths7.netlify.app/" target="_blank" style="text-decoration: none;"><p class="gradiant-effect" style="font-size: large; font-weight:bolder">Portfolio Website</p></a>
                         </div>
+                    </div> -->
+                    <img src="./images/blurme.png" style="float: center;height: 150px; width: 100%; object-fit: cover; border-radius: 5px;">
+                    <div class="proj-text">
+                        <a href="https://siddharths7.netlify.app/" target="_blank" style="text-decoration: none;">
+                            <p class="gradiant-effect" style="font-size: 20px; font-weight:bold">Portfolio Website</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -109,21 +127,6 @@
             loader.style.borderRadius="50%";
             loader.style.visibility="hidden";
         });
-
-        const options = {
-            bottom: '32px', 
-            right: '32px', 
-            left: 'unset', 
-            time: '0.5s', 
-            mixColor: '#fff', 
-            buttonColorDark: '#fff',
-            buttonColorLight: '#111',
-            saveInCookies: true,
-            label: '🌙',
-            autoMatchOsTheme: true
-        }
-        const darkmode = new Darkmode(options);
-        darkmode.showWidget();
     </script>
 </body>
 </html>
